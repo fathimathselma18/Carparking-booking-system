@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_marginTop="50dp"
+    tools:context=".UserRegister">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Your existing layout content here -->
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:boxStrokeColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            app:hintTextColor="@color/myPrimary"
+            android:hint="name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:fontFamily="@font/quicksand_medium"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:boxStrokeColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            app:hintTextColor="@color/myPrimary"
+            android:hint="age">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                android:fontFamily="@font/quicksand_medium"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:boxStrokeColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            app:hintTextColor="@color/myPrimary"
+            android:hint="address">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName2"
+                android:layout_width="match_parent"
+                android:maxLines="5"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_height="123dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UserPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/quicksand_medium"
+            app:boxStrokeColor="@color/myPrimary"
+            app:hintTextColor="@color/myPrimary"
+            android:hint="mobile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:fontFamily="@font/quicksand_medium"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/quicksand_medium"
+            app:boxStrokeColor="@color/myPrimary"
+            app:hintTextColor="@color/myPrimary"
+            android:maxLines="1"
+            android:hint="email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextName5"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/quicksand_medium"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Userpassrord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:boxStrokeColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            app:hintTextColor="@color/myPrimary"
+            android:hint="password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:fontFamily="@font/quicksand_medium"
+                android:maxLines="1"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/UserRegisterButton"
+            android:layout_width="156dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="register"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/myPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:fontFamily="@font/quicksand_medium"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have An Account ?"
+            android:fontFamily="@font/quicksand_medium"
+            />
+
+        <TextView
+            android:id="@+id/loginPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:textColor="@color/myPrimary"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

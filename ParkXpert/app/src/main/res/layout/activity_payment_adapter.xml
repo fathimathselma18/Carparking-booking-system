@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".ADAPTER.PaymentAdapter">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:focusable="false"
+        app:cardElevation="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/USER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="NAME : " />
+
+                <TextView
+                    android:id="@+id/USER_NAME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="Blah blah blah  " />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PRICE_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/white"
+                    android:text="PRICE :"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/textTo"/>
+
+                <TextView
+                    android:id="@+id/PRICE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/white"
+                    android:text="PRICE :"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/textTo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:id="@+id/CARDNUMBER_Label"
+                    android:textColor="@android:color/black"
+                    android:text="CARDNUMBER : " />
+
+                <TextView
+                    android:id="@+id/CARDNUMBER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="CARDNUMBER "
+
+                    android:layout_toRightOf="@+id/textTo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/CVVlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="CVV : " />
+
+                <TextView
+                    android:id="@+id/CVV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="124"
+                    android:layout_toRightOf="@+id/textTo"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/EXP_LABEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="EXPIRY DATE : " />
+
+                <TextView
+                    android:id="@+id/EXPIRYDATE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="124"
+                    android:layout_toRightOf="@+id/textTo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ACC_NUMBER_LABEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="ACCOUNT NUMBER :"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/ACC_NUMBER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="124"
+                    android:layout_toRightOf="@+id/textTo"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_LABEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="Date of Payment : " />
+
+                <TextView
+                    android:id="@+id/payment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textColor="@android:color/black"
+                    android:text="124"
+                    android:layout_toRightOf="@+id/textTo"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

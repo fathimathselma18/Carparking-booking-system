@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="50dp"
+    tools:context="USER.EnterDetails">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sloteNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slote number :"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_medium">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Todayprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_medium">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/vehicleType"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/spinerborder"
+            android:fontFamily="@font/quicksand_medium" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/uploadDrivingLicence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:boxStrokeColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            app:hintTextColor="@color/myPrimary"
+            android:hint="Driving Licence no">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:fontFamily="@font/quicksand_medium"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/parkingTimeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Select Parking Time"
+            android:textSize="15dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:inputType="none"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/selectedTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/ParkingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="156dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Upload"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/myPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>

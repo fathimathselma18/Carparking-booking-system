@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="USER.Feedback"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/feedbackimage">
+
+        </ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userfeedback_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="@color/myPrimary"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Subject">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userfeedback_details"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter Description.."
+            android:fontFamily="@font/quicksand_medium"
+            app:boxStrokeColor="@color/myPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:fontFamily="@font/quicksand_medium"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <RatingBar
+            android:layout_gravity="center"
+            android:id="@+id/userfeedback_rating"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:numStars="5"
+            android:progressTint="@color/myPrimary"
+            android:rating="0"
+            android:secondaryProgressTint="#000"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/userfeedback_btnsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:backgroundTint="@color/myPrimary"
+            android:textColor="@android:color/white"
+            android:text="      Send FeedBack      "
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView >

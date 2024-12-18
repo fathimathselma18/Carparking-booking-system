@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/slot_equests">
+
+    <fragment
+        android:id="@+id/users"
+        android:name="com.example.parkxpert.ADMIN.ui.User"
+        android:label="User"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/slot_equests"
+        android:name="com.example.parkxpert.ADMIN.ui.Requets"
+        android:label="Request"
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
+        android:id="@+id/AddPrice"
+        android:name="com.example.parkxpert.ADMIN.ui.AmountSlot"
+        android:label="Add"
+        tools:layout="@layout/fragment_amount_slote" />
+
+    <fragment
+        android:id="@+id/paymentAdmin"
+        android:name="com.example.parkxpert.ADMIN.ui.Payment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" />
+
+
+    <fragment
+        android:id="@+id/feedbackAdmin"
+        android:name="com.example.parkxpert.ADMIN.ui.Feedback"
+        android:label="FeedBack"
+        tools:layout="@layout/fragment_feedback" />
+</navigation>
